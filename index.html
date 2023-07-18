@@ -1,32 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Curso Git Alura</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+  <title>Criação de um Repositório Git</title>
 </head>
 <body>
-    <h1>Curso Git Alura</h1>
-
-    <h2>
-        <p>Para publicar um repositório no Git, siga as seguintes etapas:
-
-        <p>1. Inicie um repositório local: Se você ainda não possui um repositório local, crie um novo diretório em seu computador e navegue até ele usando o terminal ou o prompt de comando.
-
-        <p>2. Inicialize o repositório Git: Dentro do diretório do seu projeto, execute o comando `git init` para iniciar o repositório Git. Isso criará uma pasta oculta chamada `.git` que contém todos os arquivos e histórico do Git.
-
-        <p>3. Adicione arquivos ao repositório: Use o comando `git add` seguido pelo nome dos arquivos que você deseja adicionar ao repositório. Por exemplo, se você deseja adicionar todos os arquivos do diretório atual, use `git add .`.
-
-        <p>4. Faça um commit das alterações: Use o comando `git commit -m "mensagem de commit"` para criar um novo commit contendo as alterações adicionadas. Certifique-se de fornecer uma mensagem significativa que descreva as alterações realizadas.
-
-        <p>5. Crie um repositório remoto: Acesse uma plataforma de hospedagem Git, como o GitHub, o GitLab ou o Bitbucket, e crie um novo repositório vazio. Siga as instruções fornecidas pela plataforma para criar o repositório.
-
-        <p>6. Associe o repositório remoto ao local: No seu repositório local, execute o comando `git remote add origin <URL do repositório remoto>`. Isso vinculará o repositório local ao repositório remoto que você acabou de criar.
-
-        <p>7. Envie as alterações para o repositório remoto: Execute o comando `git push -u origin master` para enviar as alterações locais para o repositório remoto. Dependendo da sua configuração, pode ser necessário fornecer suas credenciais de login.
-
-        <p>Após seguir essas etapas, as alterações do seu repositório local serão publicadas no repositório remoto e estarão acessíveis para colaboradores ou para o público, dependendo das configurações de privacidade do seu repositório.
-    </h2>
-    
-    <p>Git Init: Inicializa um repositório</p>
-    <p>Git Status: Verifica o status do repositório</p>
-    <p>Git Add: Adiciona um arquivo ao repositório</p>
+  <h1>Criação de um Repositório Git</h1>
+  
+  <h2>Passo 1: Iniciar um repositório local</h2>
+  <pre><code>
+    $ mkdir meu-repositorio
+    $ cd meu-repositorio
+    $ git init
+  </code></pre>
+  
+  <h2>Passo 2: Adicionar e confirmar arquivos</h2>
+  <pre><code>
+    $ git add .
+    $ git commit -m "Meu primeiro commit"
+  </code></pre>
+  
+  <h2>Passo 3: Criar um repositório remoto</h2>
+  <p>Crie um repositório vazio em uma plataforma Git, como o GitHub, GitLab ou Bitbucket.</p>
+  
+  <h2>Passo 4: Associar o repositório remoto</h2>
+  <pre><code>
+    $ git remote add origin <URL do repositório remoto>
+  </code></pre>
+  
+  <h2>Passo 5: Enviar as alterações para o repositório remoto</h2>
+  <pre><code>
+    $ git push -u origin master
+  </code></pre>
+  
+  <h2>Comandos Git adicionais</h2>
+  <p>Aqui estão alguns outros comandos Git comumente usados:</p>
+  <ul>
+    <li><code>git status</code> - Verificar o status atual do repositório</li>
+    <li><code>git branch</code> - Listar as branches (ramificações) disponíveis</li>
+    <li><code>git checkout -b nome-da-branch</code> - Criar e mudar para uma nova branch</li>
+    <li><code>git pull origin master</code> - Atualizar o repositório local com as alterações do repositório remoto</li>
+    <li><code>git log</code> - Exibir o histórico de commits</li>
+  </ul>
+</body>
 </html>
